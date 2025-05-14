@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
     }
     printf("Here is the message: %s\n", buffer);
 
-    n = recv(dialogSocket, "I got your message", 18, 0);
+    n = send(dialogSocket, "I got your message", 18, 0);
     if (n < 0) 
     {
         perror("ERROR writing to socket");
