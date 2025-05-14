@@ -44,3 +44,4 @@ Ce projet implémente un orchestrateur permettant de contrôler à distance plus
 
 Le projet met l'accent sur la simplicité et la sécurité, en permettant de configurer et d'exécuter des scans de manière centralisée et sécurisée.
 
+Un serveur de test pour le scan nikto a été créé en python.
