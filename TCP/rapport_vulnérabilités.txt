@@ -1,0 +1,72 @@
+
+--- Résultat nmap (Wed May 14 17:22:56 2025
+) ---
+Starting Nmap 7.93 ( https://nmap.org ) at 2025-05-14 17:22 CEST
+Nmap scan report for 192.168.100.1
+Host is up (0.00017s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH 9.2p1 Debian 2+deb12u5 (protocol 2.0)
+2222/tcp open  EtherNetIP-1?
+MAC Address: 08:00:27:1D:E4:C2 (Oracle VirtualBox virtual NIC)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 35.79 seconds
+
+--- Fin résultat nmap ---
+
+
+--- Résultat nikto (Wed May 14 17:36:17 2025
+) ---
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          127.0.0.1
++ Target Hostname:    localhost
++ Target Port:        8080
++ Start Time:         2025-05-14 17:35:59 (GMT2)
+---------------------------------------------------------------------------
++ Server: ARRAY(0x5571d49d4a18)
++ /: Retrieved x-powered-by header: PHP/5.2.4.
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ : Server banner changed from 'ARRAY(0x5571d49d4a18)' to 'ARRAY(0x5571d6d76f40)'.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
++ /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy
++ /: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
++ /: Suggested security header missing: x-content-type-options. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
++ /: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
++ 7862 requests: 0 error(s) and 8 item(s) reported on remote host
++ End Time:           2025-05-14 17:36:17 (GMT2) (18 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+--- Fin résultat nikto ---
+
+
+--- Résultat nikto (Wed May 14 17:37:33 2025
+) ---
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          127.0.0.1
++ Target Hostname:    localhost
++ Target Port:        8080
++ Start Time:         2025-05-14 17:37:16 (GMT2)
+---------------------------------------------------------------------------
++ Server: ARRAY(0x56394db15058)
++ /: Retrieved x-powered-by header: PHP/5.2.4.
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ : Server banner changed from 'ARRAY(0x56394db15058)' to 'ARRAY(0x56394fddf6c0)'.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
++ /: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
++ /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy
++ /: Suggested security header missing: x-content-type-options. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
++ /: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
++ 7862 requests: 0 error(s) and 8 item(s) reported on remote host
++ End Time:           2025-05-14 17:37:33 (GMT2) (17 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+--- Fin résultat nikto ---
+
